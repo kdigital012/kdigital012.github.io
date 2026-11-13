@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://kdigital012.github.io/genius-switch/">
     
-    <!-- Auto-Generated Brain Favicon (No image upload needed!) -->
+    <!-- Auto-Generated Brain Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
 
     <!-- Schema Markup -->
@@ -78,6 +78,10 @@
 
         /* Box Grids */
         .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; text-align: left; }
+        
+        /* Ensure exactly 2 columns for 4 items on desktop */
+        .grid-half { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; max-width: 1000px; margin: 0 auto; }
+
         .box { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border-top: 4px solid #0b1a30; transition: transform 0.2s; }
         .box:hover { transform: translateY(-5px); }
         .box h3 { font-size: 18px; margin-top: 0; color: #0b1a30; display: flex; align-items: center; gap: 10px; }
@@ -130,6 +134,7 @@
             th, td { padding: 12px 10px; font-size: 14px; }
             .price-box { padding: 30px 20px; }
             .cta-btn { width: 100%; box-sizing: border-box; text-align: center; }
+            .grid-half { grid-template-columns: 1fr; } /* Changes 2 columns to 1 column on mobile */
         }
     </style>
 </head>
@@ -301,7 +306,7 @@
                 <p style="color: #4CAF50; font-weight: bold; font-size: 18px;">Save $180 + FREE Bonuses</p>
                 <ul>
                     <li>✔️ The Genius Switch Full Core System</li>
-                    <li>✔️ All 3 VIP Exclusive Digital Bonuses</li>
+                    <li>✔️ All VIP Exclusive Digital Bonuses</li>
                     <li>✔️ Instant High-Speed Access</li>
                     <li>✔️ 90-Day Unconditional Refund Policy</li>
                 </ul>
@@ -310,14 +315,16 @@
         </div>
     </section>
 
-    <!-- 3 Free Bonuses -->
+    <!-- 4 Free Bonuses -->
     <section class="section bg-white">
         <div class="container">
             <div class="section-header">
                 <h2>Free Special Digital Bonuses Included</h2>
                 <p>When you order on the official store today, you receive these additional guides.</p>
             </div>
-            <div class="grid-container">
+            
+            <!-- Using grid-half for 2 columns / 4 items -->
+            <div class="grid-half">
                 <div class="box bonus-box">
                     <span class="bonus-badge">FREE BONUS #1</span>
                     <h3>The Genius Mindset Playbook</h3>
@@ -333,6 +340,11 @@
                     <h3>Instant Focus Audio Reset</h3>
                     <p>A quick 3-minute emergency soundwave session for when you need rapid concentration before big meetings.</p>
                 </div>
+                <div class="box bonus-box">
+                    <span class="bonus-badge">FREE BONUS #4</span>
+                    <h3>Morning Motivation Optimizer</h3>
+                    <p>A short guide filled with actionable routines to jumpstart your mornings with positivity and mental clarity.</p>
+                </div>
             </div>
             
             <!-- Guarantee -->
@@ -344,14 +356,14 @@
         </div>
     </section>
 
-    <!-- Customer Reviews -->
+    <!-- 4 Customer Reviews -->
     <section class="section">
         <div class="container">
             <div class="section-header">
                 <h2>Customer Reviews & Experience Summary</h2>
                 <p>User feedback gathered from independent user experiences.</p>
             </div>
-            <div class="grid-container">
+            <div class="grid-half">
                 <div class="box review-box">
                     <div class="stars">★★★★★</div>
                     <p>"I listen to the 7-minute track every morning with my morning coffee. It puts my mind in a relaxed yet super focused state for work!"</p>
@@ -376,17 +388,26 @@
                         <div><strong>David R.</strong><br><small style="color: #4CAF50;">Verified Buyer</small></div>
                     </div>
                 </div>
+                <div class="box review-box">
+                    <div class="stars">★★★★★</div>
+                    <p>"I was skeptical at first, but within a week I noticed a huge difference in my productivity. Highly recommended!"</p>
+                    <div class="reviewer">
+                        <div class="avatar">E</div>
+                        <div><strong>Emma W.</strong><br><small style="color: #4CAF50;">Verified Buyer</small></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- FAQ Section (7 Questions) -->
     <section id="faq" class="section bg-white">
         <div class="container faq-wrapper">
             <div class="section-header">
                 <h2>Frequently Asked Questions</h2>
                 <p>Everything you need to know about purchasing and using The Genius Switch.</p>
             </div>
+            
             <details>
                 <summary>What is The Genius Switch?</summary>
                 <p>It is a digital audio program designed using advanced brainwave entrainment technology to help you reach a state of deep focus, clarity, and relaxation.</p>
@@ -400,9 +421,22 @@
                 <p>No, this is a 100% digital product. You will get instant access to download the audio files immediately after your purchase.</p>
             </details>
             <details>
-                <summary>What if it doesn't work for me?</summary>
-                <p>Your order is protected by a 90-day, 100% money-back guarantee. If you aren't satisfied, you can request a full refund.</p>
+                <summary>How long does it take to notice benefits?</summary>
+                <p>Many users report feeling calmer and more focused after their very first 7-minute session, while deeper cognitive benefits compound over a few weeks of consistent use.</p>
             </details>
+            <details>
+                <summary>Is it safe for everyone?</summary>
+                <p>Yes, the audio is completely safe and non-invasive. However, if you have a history of seizures or epilepsy, it is always recommended to consult your physician before using brainwave entrainment audio.</p>
+            </details>
+            <details>
+                <summary>Are there any recurring monthly charges?</summary>
+                <p>No. Your purchase today is a one-time secure payment. There are no hidden fees or monthly subscriptions.</p>
+            </details>
+            <details>
+                <summary>What if it doesn't work for me?</summary>
+                <p>Your order is protected by a 90-day, 100% money-back guarantee. If you aren't satisfied, simply contact customer support for a full refund.</p>
+            </details>
+
         </div>
     </section>
 
